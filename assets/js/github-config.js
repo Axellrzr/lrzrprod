@@ -11,7 +11,7 @@
  * Voir README.md → section "Configurer l'admin" pour la marche à suivre.
  */
 
-export const GITHUB_OWNER = 'lrzrprod';
+export const GITHUB_OWNER = 'Axellrzr';
 export const GITHUB_REPO = 'lrzrprod.github.io';
 export const GITHUB_BRANCH = 'main';
 export const CONTENT_PATH = 'assets/data/content.json';

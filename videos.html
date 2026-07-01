@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vidéos — LRZR Production</title>
+  <meta name="description" content="Vidéos de LRZR Production — Drone FPV, Publicité, Clips, Courts-métrages." />
+  <link rel="canonical" href="https://lrzrprod.fr/videos.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="galerie-page">
+
+  <header class="site-header scrolled" id="top">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav__logo">LRZR<span class="nav__logo-accent">.</span></a>
+      <button class="nav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="index.html#about">À propos</a></li>
+        <li><a href="galerie.html">Photos</a></li>
+        <li><a href="videos.html" class="active">Vidéos</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#contact" class="nav__cta">Me contacter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="galerie-main">
+
+    <div class="galerie-header">
+      <div class="container">
+        <p class="section-label">Portfolio</p>
+        <h1 class="galerie-title">Mes vidéos</h1>
+      </div>
+    </div>
+
+    <!-- Filtres -->
+    <section class="videos-section">
+      <div class="container">
+        <div class="portfolio__filters reveal" role="tablist" aria-label="Filtrer par catégorie">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tout</button>
+          <button class="filter-btn" data-filter="fpv" role="tab" aria-selected="false">Drone FPV</button>
+          <button class="filter-btn" data-filter="pub" role="tab" aria-selected="false">Publicité</button>
+          <button class="filter-btn" data-filter="clip" role="tab" aria-selected="false">Clip</button>
+          <button class="filter-btn" data-filter="court" role="tab" aria-selected="false">Court-métrage</button>
+        </div>
+
+        <!-- Grille vidéos — injectée par JS -->
+        <div class="videos-grid" id="videos-grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox vidéo -->
+  <div class="video-lightbox" id="video-lightbox" hidden>
+    <button class="video-lightbox__close" aria-label="Fermer">&times;</button>
+    <div class="video-lightbox__inner">
+      <iframe id="video-lightbox-iframe" src="" allowfullscreen allow="autoplay; encrypted-media" loading="lazy" title="Vidéo LRZR Production"></iframe>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="index.html" class="footer__logo">LRZR<span>.</span></a>
+        <nav class="footer__nav">
+          <a href="index.html#about">À propos</a>
+          <a href="galerie.html">Photos</a>
+          <a href="videos.html">Vidéos</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="footer__socials">
+          <a href="https://www.instagram.com/axellrzr" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@axelluimeme" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.54 6.42A2.78 2.78 0 0 0 20.6 4.47C18.88 4 12 4 12 4s-6.88 0-8.6.47a2.78 2.78 0 0 0-1.95 1.95C1 8.14 1 12 1 12s0 3.86.45 5.58a2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.6-.47a2.78 2.78 0 0 0 1.95-1.95C23 15.86 23 12 23 12s0-3.86-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="mailto:contact.lrzrprod@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year"></span> LRZR Production — Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

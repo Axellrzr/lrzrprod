@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — LRZR Production</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="admin-page">
+
+  <header class="admin-topbar">
+    <span class="admin-topbar__logo">LRZR<span class="nav__logo-accent">.</span> <small>Admin</small></span>
+    <button class="btn btn--ghost btn--small" id="logout-btn" hidden>Déconnexion</button>
+  </header>
+
+  <main class="admin-main">
+
+    <!-- Connexion -->
+    <section id="admin-login" class="admin-panel">
+      <div class="container container--narrow">
+        <p class="section-label">Espace privé</p>
+        <h1 class="admin-title">Connexion admin</h1>
+        <p class="admin-text">
+          La première connexion demande un jeton d'accès GitHub (une seule fois par
+          navigateur) : voir <code>README.md</code> → section « Configurer l'admin ».
+        </p>
+        <form id="login-form" class="admin-form" novalidate>
+          <div class="form-group">
+            <label for="login-password">Mot de passe</label>
+            <input type="password" id="login-password" name="password" required autocomplete="current-password" />
+          </div>
+          <div class="form-group">
+            <label for="login-token">Jeton d'accès GitHub</label>
+            <input type="password" id="login-token" name="token" required autocomplete="off" placeholder="ghp_..." />
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Se connecter</button>
+          <p class="form-feedback" id="login-feedback" role="alert" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="admin-dashboard" class="admin-panel" hidden>
+      <div class="container">
+        <div class="admin-tabs" role="tablist" aria-label="Sections admin">
+          <button class="admin-tab active" data-tab="hero" role="tab" aria-selected="true">Hero</button>
+          <button class="admin-tab" data-tab="categories" role="tab" aria-selected="false">Catégories &amp; photos</button>
+          <button class="admin-tab" data-tab="videos" role="tab" aria-selected="false">Vidéos</button>
+        </div>
+
+        <p class="form-feedback" id="dashboard-feedback" role="alert" aria-live="polite"></p>
+
+        <!-- HERO -->
+        <div class="admin-tabpanel" id="tab-hero">
+          <h2 class="admin-subtitle">Images du carousel d'accueil</h2>
+          <div class="admin-grid" id="hero-grid"></div>
+
+          <h3 class="admin-subtitle admin-subtitle--sm">Ajouter une image</h3>
+          <form id="hero-form" class="admin-form admin-form--inline">
+            <div class="form-group">
+              <label for="hero-url">Lien de l'image (ex: ibb.co)</label>
+              <input type="url" id="hero-url" placeholder="https://i.ibb.co/..." required />
+            </div>
+            <div class="form-group">
+              <label for="hero-alt">Texte alternatif</label>
+              <input type="text" id="hero-alt" placeholder="Description de l'image" required />
+            </div>
+            <button type="submit" class="btn btn--primary">Ajouter</button>
+          </form>
+        </div>
+
+        <!-- CATEGORIES -->
+        <div class="admin-tabpanel" id="tab-categories" hidden>
+          <h2 class="admin-subtitle">Catégories</h2>
+          <div id="categories-list"></div>
+
+          <h3 class="admin-subtitle admin-subtitle--sm">Créer une catégorie</h3>
+          <form id="category-form" class="admin-form admin-form--inline">
+            <div class="form-group">
+              <label for="cat-id">Identifiant (sans espace/accent)</label>
+              <input type="text" id="cat-id" pattern="[a-z0-9-]+" placeholder="ex: portrait" required />
+            </div>
+            <div class="form-group">
+              <label for="cat-label">Nom affiché</label>
+              <input type="text" id="cat-label" placeholder="ex: Portraits" required />
+            </div>
+            <div class="form-group">
+              <label for="cat-cover-url">Lien de la photo de couverture</label>
+              <input type="url" id="cat-cover-url" placeholder="https://i.ibb.co/..." required />
+            </div>
+            <div class="form-group">
+              <label for="cat-cover-alt">Alt de la couverture</label>
+              <input type="text" id="cat-cover-alt" required />
+            </div>
+            <button type="submit" class="btn btn--primary">Créer la catégorie</button>
+          </form>
+
+          <h3 class="admin-subtitle admin-subtitle--sm">Ajouter une photo à une catégorie</h3>
+          <form id="photo-form" class="admin-form admin-form--inline">
+            <div class="form-group">
+              <label for="photo-cat">Catégorie</label>
+              <select id="photo-cat" required></select>
+            </div>
+            <div class="form-group">
+              <label for="photo-url">Lien de la photo (ex: ibb.co)</label>
+              <input type="url" id="photo-url" placeholder="https://i.ibb.co/..." required />
+            </div>
+            <div class="form-group">
+              <label for="photo-alt">Texte alternatif</label>
+              <input type="text" id="photo-alt" placeholder="Description de la photo" />
+            </div>
+            <button type="submit" class="btn btn--primary">Ajouter la photo</button>
+          </form>
+        </div>
+
+        <!-- VIDEOS -->
+        <div class="admin-tabpanel" id="tab-videos" hidden>
+          <h2 class="admin-subtitle">Vidéos</h2>
+          <div id="videos-list"></div>
+
+          <h3 class="admin-subtitle admin-subtitle--sm">Ajouter une vidéo</h3>
+          <form id="video-form" class="admin-form admin-form--inline">
+            <div class="form-group">
+              <label for="video-url">Lien ou ID YouTube</label>
+              <input type="text" id="video-url" placeholder="https://www.youtube.com/watch?v=..." required />
+            </div>
+            <div class="form-group">
+              <label for="video-title">Titre</label>
+              <input type="text" id="video-title" required />
+            </div>
+            <div class="form-group">
+              <label for="video-category">Catégorie</label>
+              <select id="video-category" required>
+                <option value="fpv">Drone FPV</option>
+                <option value="pub">Publicité</option>
+                <option value="clip">Clip</option>
+                <option value="court">Court-métrage</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="video-size">Taille dans la grille</label>
+              <select id="video-size" required>
+                <option value="md">Moyenne</option>
+                <option value="lg">Grande</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary">Ajouter la vidéo</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="../assets/js/admin.js"></script>
+</body>
+</html>

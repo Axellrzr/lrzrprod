@@ -1,0 +1,8 @@
+# robots.txt — LRZR Production
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://lrzrprod.fr/sitemap.xml

@@ -2056,23 +2056,52 @@ section {
 }
 .admin-thumb img { width: 100%; height: 100%; object-fit: cover; }
 
-.admin-thumb__delete {
+.admin-thumb__actions {
   position: absolute;
   top: 6px;
   right: 6px;
+  display: flex;
+  gap: 4px;
+}
+
+.admin-thumb__edit,
+.admin-thumb__delete {
   width: 26px;
   height: 26px;
   border-radius: 50%;
   background: rgba(10, 10, 10, 0.75);
   color: var(--color-text);
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background var(--transition-fast);
 }
+.admin-thumb__edit:hover { background: var(--color-accent-2); color: #000; }
 .admin-thumb__delete:hover { background: var(--color-accent); }
+
+.admin-thumb--edit {
+  aspect-ratio: auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: var(--space-xs);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.admin-edit-input {
+  width: 100%;
+  padding: 0.5em 0.7em;
+  background: var(--color-bg-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  font-size: 0.85rem;
+}
+
+.admin-edit-actions { display: flex; gap: 6px; }
 
 .admin-empty { color: var(--color-text-faint); }
 
@@ -2091,8 +2120,17 @@ section {
   font-size: 1.1rem;
 }
 .admin-category__count { color: var(--color-text-muted); font-family: var(--font-body); font-size: 0.9rem; }
-.admin-category__delete { margin-left: auto; }
+.admin-category__actions { margin-left: auto; display: flex; gap: 6px; }
 .admin-category .admin-grid { margin-top: var(--space-sm); }
+
+.admin-category-edit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  flex: 1;
+}
+.admin-category-edit .admin-edit-input { flex: 1 1 160px; }
 
 .admin-video-row {
   display: flex;
@@ -2100,9 +2138,14 @@ section {
   gap: var(--space-sm);
   padding: var(--space-xs) 0;
   border-bottom: 1px solid var(--color-border);
+  flex-wrap: wrap;
 }
 .admin-video-row img { border-radius: var(--radius-sm); object-fit: cover; }
 .admin-video-row__info { flex: 1; display: flex; flex-direction: column; gap: 2px; }
 .admin-video-row__info span { color: var(--color-text-muted); font-size: 0.9rem; }
+.admin-video-row__actions { display: flex; gap: 6px; }
+
+.admin-video-row--edit .admin-edit-input,
+.admin-video-row--edit select.admin-edit-input { flex: 1 1 140px; }
 
 .btn--small { padding: 0.5em 1em; font-size: 0.85rem; }

@@ -1,10 +1,25 @@
 {
   "heroImages": [
-    { "src": "https://i.ibb.co/hFpw1GnB/portrait-1.jpg", "alt": "Photo hero 1 — LRZR Production" },
-    { "src": "https://i.ibb.co/HfbS384r/wild4.jpg", "alt": "Photo hero 2 — LRZR Production" },
-    { "src": "https://i.ibb.co/My0ZrnKK/street-1.jpg", "alt": "Photo hero 3 — LRZR Production" },
-    { "src": "https://i.ibb.co/W4PBYPDH/auto-1.jpg", "alt": "Photo hero 4 — LRZR Production" },
-    { "src": "https://i.ibb.co/fV7WF94b/produit-1.jpg", "alt": "Photo hero 5 — LRZR Production" }
+    {
+      "src": "https://i.ibb.co/hFpw1GnB/portrait-1.jpg",
+      "alt": "Photo hero 1 — LRZR Production"
+    },
+    {
+      "src": "https://i.ibb.co/HfbS384r/wild4.jpg",
+      "alt": "Photo hero 2 — LRZR Production"
+    },
+    {
+      "src": "https://i.ibb.co/My0ZrnKK/street-1.jpg",
+      "alt": "Photo hero 3 — LRZR Production"
+    },
+    {
+      "src": "https://i.ibb.co/W4PBYPDH/auto-1.jpg",
+      "alt": "Photo hero 4 — LRZR Production"
+    },
+    {
+      "src": "https://i.ibb.co/fV7WF94b/produit-1.jpg",
+      "alt": "Photo hero 5 — LRZR Production"
+    }
   ],
   "categories": [
     {
@@ -13,12 +28,30 @@
       "cover": "https://i.ibb.co/hFpw1GnB/portrait-1.jpg",
       "coverAlt": "Portrait — LRZR Production",
       "photos": [
-        { "src": "https://i.ibb.co/hFpw1GnB/portrait-1.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/ymY6H9Qx/portrait-2.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/mFhLwv2r/portrait-3.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/fV10p8sk/portrait-4.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/SwMHrTdz/portrait-5.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/G4Gg49tF/portrait-6.jpg", "alt": "" }
+        {
+          "src": "https://i.ibb.co/hFpw1GnB/portrait-1.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/ymY6H9Qx/portrait-2.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/mFhLwv2r/portrait-3.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/fV10p8sk/portrait-4.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/SwMHrTdz/portrait-5.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/G4Gg49tF/portrait-6.jpg",
+          "alt": ""
+        }
       ]
     },
     {
@@ -27,10 +60,22 @@
       "cover": "https://i.ibb.co/HfbS384r/wild4.jpg",
       "coverAlt": "Wildlife — LRZR Production",
       "photos": [
-        { "src": "https://i.ibb.co/233NLg8Q/wild1.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/0ppVKng7/wild2.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/xZty7B7/wild3.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/HfbS384r/wild4.jpg", "alt": "" }
+        {
+          "src": "https://i.ibb.co/233NLg8Q/wild1.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/0ppVKng7/wild2.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/xZty7B7/wild3.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/HfbS384r/wild4.jpg",
+          "alt": ""
+        }
       ]
     },
     {
@@ -39,10 +84,22 @@
       "cover": "https://i.ibb.co/My0ZrnKK/street-1.jpg",
       "coverAlt": "Street photography — LRZR Production",
       "photos": [
-        { "src": "https://i.ibb.co/My0ZrnKK/street-1.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/WbgbgVc/street-2.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/nMnk9Sm0/street-3.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/MDd1BnGZ/street-4.jpg", "alt": "" }
+        {
+          "src": "https://i.ibb.co/My0ZrnKK/street-1.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/WbgbgVc/street-2.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/nMnk9Sm0/street-3.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/MDd1BnGZ/street-4.jpg",
+          "alt": ""
+        }
       ]
     },
     {
@@ -51,31 +108,106 @@
       "cover": "https://i.ibb.co/W4PBYPDH/auto-1.jpg",
       "coverAlt": "Photographie automobile — LRZR Production",
       "photos": [
-        { "src": "https://i.ibb.co/W4PBYPDH/auto-1.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/FkQSfkLy/auto-2.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/G3v9kdK2/auto-3.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/nqD7xkyc/auto-4.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/vxzKvPPj/auto-5.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/BKLXpSRw/auto-6.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/ksyhK876/auto-7.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/LFr2MVc/auto-8.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/Z6qg9W5M/auto-9.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/Fb98gCHs/auto-10.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/9H9Y7whN/auto-11.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/rf2cqCCT/auto-12.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/Wvz4wWmD/auto-13.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/TDXZMDYW/auto-14.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/PGpDbrcP/auto-15.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/bj9FsnCW/auto-16.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/XkCRjGfS/auto-17.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/S4Q90sxr/auto-18.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/39r7FJZQ/auto-19.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/0j5WcdcQ/auto-20.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/WWyrdNLK/auto-21.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/bgNzbPjh/auto-22.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/4Rftmx2s/auto-23.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/Nd2jR1Y9/auto-24.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/603vM00W/auto-25.jpg", "alt": "" }
+        {
+          "src": "https://i.ibb.co/W4PBYPDH/auto-1.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/FkQSfkLy/auto-2.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/G3v9kdK2/auto-3.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/nqD7xkyc/auto-4.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/vxzKvPPj/auto-5.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/BKLXpSRw/auto-6.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/ksyhK876/auto-7.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/LFr2MVc/auto-8.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/Z6qg9W5M/auto-9.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/Fb98gCHs/auto-10.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/9H9Y7whN/auto-11.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/rf2cqCCT/auto-12.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/Wvz4wWmD/auto-13.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/TDXZMDYW/auto-14.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/PGpDbrcP/auto-15.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/bj9FsnCW/auto-16.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/XkCRjGfS/auto-17.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/S4Q90sxr/auto-18.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/39r7FJZQ/auto-19.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/0j5WcdcQ/auto-20.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/WWyrdNLK/auto-21.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/bgNzbPjh/auto-22.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/4Rftmx2s/auto-23.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/Nd2jR1Y9/auto-24.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/603vM00W/auto-25.jpg",
+          "alt": ""
+        }
       ]
     },
     {
@@ -84,18 +216,49 @@
       "cover": "https://i.ibb.co/fV7WF94b/produit-1.jpg",
       "coverAlt": "Photographie produit — LRZR Production",
       "photos": [
-        { "src": "https://i.ibb.co/fV7WF94b/produit-1.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/952T1X2/produit-2.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/v4FkVvBc/produit-3.jpg", "alt": "" },
-        { "src": "https://i.ibb.co/hx311QZB/produit-4.jpg", "alt": "" }
+        {
+          "src": "https://i.ibb.co/fV7WF94b/produit-1.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/952T1X2/produit-2.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/v4FkVvBc/produit-3.jpg",
+          "alt": ""
+        },
+        {
+          "src": "https://i.ibb.co/hx311QZB/produit-4.jpg",
+          "alt": ""
+        }
       ]
     }
   ],
   "videos": [
-    { "youtubeId": "GOfMPikKYYY", "title": "FPV Cinematic — Mer", "category": "pub", "size": "lg" },
-    { "youtubeId": "GOfMPikKYYY", "title": "FPV — Golden Hour", "category": "fpv", "size": "md" },
-    { "youtubeId": "GOfMPikKYYY", "title": "Clip musical", "category": "clip", "size": "md" },
-    { "youtubeId": "GOfMPikKYYY", "title": "Film institutionnel", "category": "pub", "size": "lg" },
-    { "youtubeId": "GOfMPikKYYY", "title": "Court-métrage", "category": "court", "size": "md" }
+    {
+      "youtubeId": "GOfMPikKYYY",
+      "title": "FPV Cinematic — Mer",
+      "category": "pub",
+      "size": "lg"
+    },
+    {
+      "youtubeId": "GOfMPikKYYY",
+      "title": "FPV — Golden Hour",
+      "category": "fpv",
+      "size": "md"
+    },
+    {
+      "youtubeId": "GOfMPikKYYY",
+      "title": "Clip musical",
+      "category": "clip",
+      "size": "md"
+    },
+    {
+      "youtubeId": "GOfMPikKYYY",
+      "title": "Film institutionnel",
+      "category": "pub",
+      "size": "lg"
+    }
   ]
 }

@@ -34,7 +34,11 @@ export async function checkToken(token) {
   const res = await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}`, {
     headers: headers(token),
   });
-  if (!res.ok) throw new Error(`Jeton invalide ou dépôt introuvable (${res.status})`);
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    const detail = body.message ? ` — ${body.message}` : '';
+    throw new Error(`Jeton invalide ou dépôt introuvable (${res.status}${detail}) sur ${GITHUB_OWNER}/${GITHUB_REPO}`);
+  }
   const repo = await res.json();
   if (!repo.permissions?.push) throw new Error("Ce jeton n'a pas les droits d'écriture sur le dépôt.");
 }
